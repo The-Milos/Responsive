@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive dizajn proba</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        #wrapper {
+            width: 80%;
+            max-width: 960px;
+            height: 50vh;
+            background-color: wheat;
+            margin: 20px auto 0;
+        }
+        #wrapper::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .box {
+            width: 9%;
+            margin: 3px;
+            height:90px;
+            box-sizing: border-box;
+            background-color: turquoise;
+            float: left;
+        }
+        div:nth-of-type(even) {
+            background-color: black;
+        }
+
+        @media screen and (max-width: 1024px){
+            .box {
+                width: 9%;
+            }
+        }
+
+        @media screen and (max-width: 768px){
+            .box {
+                width: 18%;
+            }
+        }
+
+        @media screen and (max-width: 414px){
+            .box {
+                width: 50vw
+                
+            }
+        }
+        
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div id="wrapper">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+</body>
+</html>
